@@ -1,0 +1,101 @@
+.navbar {
+    background: #0797ED;
+    color: black;
+}
+
+.list ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: black !important;
+}
+
+.login {
+    width: 90px;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.heading {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.heading2 {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    color: #000000;
+    font-size: 40px;
+}
+
+.text {
+    color: black;
+}
+
+.join-race-button {
+    background: #000000 !important;
+    border-radius: 8px !important;
+    height: 50px;
+    width: 200px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.jumbo1 {
+    background: #0797ED !important;
+}
+
+.jumbo1 .heading {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 120%;
+    color: white;
+}
+
+.jumbo1 .text {
+    font-size: 20px;
+    line-height: 150%;
+    color: white;
+}
+
+.jumbo2 {
+    background: #0797ED !important;
+}
+
+.jumbo2 h3 {
+    color: white;
+    font-size: 25px;
+}
+
+.dropdown {
+    float: right;
+}
+
+.dropdown button {
+    background: white;
+    color: black;
+    border: none;
+    width: 110px;
+    font-size: 15px;
+}
+
+footer {
+    background: #0797ED;
+    height: auto;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+.icons{
+    font-size: 30px;
+    color: white;
+}

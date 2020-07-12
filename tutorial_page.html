@@ -5,13 +5,15 @@
     <meta charset="utf-8">
     <title>Tutorial Page</title>
     <link rel="stylesheet" href="css/tutorial_page.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- font-awesome  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".hyperlink" data-offset="50">
 
 
     <!-- Navbar -->
@@ -44,11 +46,23 @@
     <!-- Navbar end -->
 
 
-    <div class="row m-md-5 m-sm-0">
+    <div class="row m-md-5 m-sm-0 pb-5">
         <!-- Ads section  -->
-        <div class="col-4 col-md-3 text-center my-5">
+        <div class="col-4 col-md-3 my-5">
 
-            <div class="ad ">
+            <div class="hyperlink text-right mb-5">
+                <p class="font-weight-bold">QUICK MENU</p>
+                <p class="m-0"><a href="#tip1" class="text-decoration-none text-dark">Tip # 1</a></p>
+                <p class="m-0"><a href="#tip1" class="text-decoration-none text-dark">Tip # 1</a></p>
+                <p class="m-0"><a href="#tip1" class="text-decoration-none text-dark">Tip # 1</a></p>
+                <p class="m-0"><a href="#tip1" class="text-decoration-none text-dark">Tip # 1</a></p>
+                <p class="m-0"><a href="#tip1" class="text-decoration-none text-dark">Tip # 1</a></p>
+                <p class="m-0"><a href="#tip1" class="text-decoration-none text-dark">Tip # 1</a></p>
+                <p class="m-0"><a href="#tip1" class="text-decoration-none text-dark">Tip # 1</a></p>
+                <p class="m-0"><a href="#tip1" class="text-decoration-none text-dark">Tip # 1</a></p>
+            </div>
+
+            <div class="ad text-center">
                 <p>ADS</p>
             </div>
         </div>
@@ -83,7 +97,7 @@
 
                 <div class="row m-0 p-0">
 
-                    <div class="col-lg-12 m-0 mt-5 px-5">
+                    <div id="tip1" class="col-lg-12 m-0 mt-5 px-5">
 
                         <h1 class="heading font-weight-bold">Tip #1: Lorem ipsum </h1>
                         <p class="text pr-5 pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -108,8 +122,10 @@
                     <div class="col-lg-12 m-0 mt-5 px-5">
 
                         <h1 class="heading font-weight-bold">Tip #1: Lorem ipsum </h1>
-                        <p class="text pr-5 pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue, augue vel luctus pulvinar, est eros accumsan libero, rhoncus vulputate eros odio sed ligula.
- 
+                        <p class="text pr-5 pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                            congue, augue vel luctus pulvinar, est eros accumsan libero, rhoncus vulputate eros odio sed
+                            ligula.
+
                         </p>
                     </div>
 
@@ -121,7 +137,79 @@
     </div>
 
 
-    
+    <!-- summary section -->
+
+    <div class="jumbotron" style="background: #33A0D9;">
+
+        <div class="row">
+            <div class="col-md-4 mt-md-0 mt-3 p-md-5 p-sm-0">
+                <h2 class="text-center text-light" style="line-height: 5;">Summary</h2>
+            </div>
+            <div class="col-md-8 mt-md-0 mt-3 text-light">
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3 pb-5">
+                        <h5>TIP 1</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum aut inventore non
+                            perspiciatis</p>
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-3 pb-5">
+                        <h5>TIP 1</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum aut inventore non
+                            perspiciatis
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3 pb-5">
+                        <h5>TIP 1</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum aut inventore non
+                            perspiciatis</p>
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-3 pb-5">
+                        <h5>TIP 1</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum aut inventore non
+                            perspiciatis
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small py-2 ">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+                <div class="col-md-3 my-3 text-left">
+                    <a href="#">Turbo Type 2020</a>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-9 mt-3">
+                    <div class="row text-md-left">
+                        <div class="col-md-3 mt-md-0">
+                            <a href="#">About Us</a>
+                        </div>
+                        <div class="col-md-3 mt-md-0 mt-3">
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                        <div class="col-md-3 mt-md-0 mt-3">
+                            <a href="#">Tutorial</a>
+                        </div>
+                        <div class="col-md-3 mt-md-0 mt-3">
+                            <a href="#">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer End -->
+
 </body>
 
 </html>

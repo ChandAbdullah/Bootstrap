@@ -17,19 +17,35 @@
     font-size: 17px;
 }
 
-.ad{
+.ad {
     height: 650px;
     background: #F2F2F2;
     line-height: 650px;
 }
 
-.ad p{
+.ad p {
     font-size: 33px;
     font-weight: bold;
 }
 
-.box{
+.box {
     height: 300px;
     width: 100%;
     background: #626262;
+}
+
+footer {
+    /* background: #0797ED; */
+    background: #2180B2;
+    height: auto;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+.icons {
+    font-size: 30px;
+    color: white;
 }

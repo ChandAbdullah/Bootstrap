@@ -121,18 +121,18 @@ input[type="password"] {
 }
 
 
-.facebook {
-    font-size: 35px;
+.facebook img{
+    height: 60px;
 }
 
-.google {
-    font-size: 35px;
+.google img{
+    height: 60px;
 }
 
 
 footer {
     /* background: #0797ED; */
-    background: #33A0D9;
+    background: #2180B2;
     height: auto;
     color: white;
 }

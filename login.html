@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <title>Login</title>
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="dist/bootstrap.min.css">
-    <script src="js/login.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- font-awesome  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -21,6 +20,7 @@
         <!-- Navbar Brand -->
         <a href="#" class="navbar-brand ml-5">
             <!-- <img src="logo.png" alt="logo"> -->
+            <img src="img/Asset 1_1 1.png" alt="">
         </a>
 
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#responsive">
@@ -49,11 +49,12 @@
 
     <section class="content p-4">
 
-        <div class="row m-0 p-0">
+        <div class="row m-0 p-0 mb-4">
             <div class="col-lg-6 col-md-6 m-0">
 
                 <!-- Rectangle -->
-                <div class="rectangle">
+                <div class="mt-5 mx-auto d-block">
+                    <img class="img-fluid" src="img/Rectangle 1.png" alt="">
 
                 </div>
 
@@ -115,10 +116,10 @@
                             <div class="col-lg-8 col-md-10 offset-lg-2">
                                 <div class="row mt-3">
                                     <div class="col-6 facebook text-right pr-3">
-                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <img src="img/facebook-logo 1.png" alt="">
                                     </div>
                                     <div class="col-6 google text-left pl-3">
-                                        <i class="fa fa-google" aria-hidden="true"></i>
+                                        <img src="img/google-g-2015-logo-png-transparent 2.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -193,10 +194,12 @@
                             <div class="col-lg-8 col-md-10 offset-lg-2">
                                 <div class="row mt-3">
                                     <div class="col-6 facebook text-right pr-3">
-                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <img src="img/facebook-logo 1.png" alt="">
+
+
                                     </div>
                                     <div class="col-6 google text-left pl-3">
-                                        <i class="fa fa-google" aria-hidden="true"></i>
+                                        <img src="img/google-g-2015-logo-png-transparent 2.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -249,33 +252,9 @@
     <!-- Footer End -->
 
 
+    <!-- javascripts -->
+    <script src="js/login.js"></script>
 </body>
 
 
 </html>
-
-<script>
-    var x = document.getElementById("login");
-    var y = document.getElementById("signup")
-
-    function signup() {
-        if (x.style.display === "none") {
-            x.style.display = "none"
-            y.style.display = "block"
-
-        } else {
-            x.style.display = "none"
-            y.style.display = "block"
-        }
-    }
-
-    function login() {
-        if (x.style.display === 'block') {
-            x.style.display = 'block'
-            y.style.display = 'none'
-        } else {
-            x.style.display = 'block'
-            y.style.display = 'none'
-        }
-    }
-</script>

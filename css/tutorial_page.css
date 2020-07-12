@@ -18,7 +18,18 @@
 }
 
 .ad{
-    height: 600px;
+    height: 650px;
     background: #F2F2F2;
-    line-height: 600px;
+    line-height: 650px;
+}
+
+.ad p{
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.box{
+    height: 300px;
+    width: 100%;
+    background: #626262;
 }

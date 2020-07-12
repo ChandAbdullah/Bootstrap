@@ -1,5 +1,6 @@
 .navbar {
-    background: #0797ED;
+    /* background: #0797ED; */
+    background: #33A0D9;
     color: black;
 }
 
@@ -22,19 +23,19 @@
     background: #ffffff;
 }
 
-.loginForm {
+.loginSignupForm {
     /* padding: 9rem 3rem 0 3rem; */
-    padding-top: 9rem;
+    padding-top: 4rem;
 }
 
-.loginForm h2 {
+.loginSignupForm h2 {
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 25px;
 
 }
 
-.loginForm .or {
+.loginSignupForm .or {
     font-size: 16px;
     padding: 0px 10px;
     position: relative;
@@ -42,8 +43,19 @@
     letter-spacing: 0.105em;
 }
 
-.loginForm .signup {
+.or{
     color: #B9B9B9;
+}
+
+.loginSignupForm .signup {
+    color: #B9B9B9;
+}
+
+.name {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
 }
 
 .email {
@@ -51,6 +63,11 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 700;
+}
+
+input[type="text"] {
+    border-radius: 4px;
+    margin-bottom: 46px;
 }
 
 input[type="email"] {
@@ -77,7 +94,11 @@ input[type="password"] {
     margin-bottom: 50px;
 }
 
-.loginForm .signinBtn {
+.signin{
+    cursor: pointer;
+}
+
+.loginSignupForm .signinBtn {
     font-family: 'Poppins', sans-serif;
     background-color: #000000;
     color: #fff;
@@ -89,7 +110,7 @@ input[type="password"] {
 
 }
 
-.loginForm .signinBtn:hover {
+.loginSignupForm .signinBtn:hover {
     background-color: #21232b;
     color: #fff;
 
@@ -100,8 +121,18 @@ input[type="password"] {
 }
 
 
+.facebook {
+    font-size: 35px;
+}
+
+.google {
+    font-size: 35px;
+}
+
+
 footer {
-    background: #0797ED;
+    /* background: #0797ED; */
+    background: #33A0D9;
     height: auto;
     color: white;
 }

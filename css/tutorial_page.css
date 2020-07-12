@@ -1,0 +1,24 @@
+.navbar {
+    /* background: #0797ED; */
+    background: #33A0D9;
+    color: black;
+}
+
+.list ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: black !important;
+}
+
+.login {
+    width: 90px;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.ad{
+    height: 600px;
+    background: #F2F2F2;
+    line-height: 600px;
+}

@@ -1,0 +1,9 @@
+body{
+    background: radial-gradient(#E5E5E5, #E5E5E5);
+}
+
+.profile-card{
+    background-color: #33A0D9;
+    border-radius: 10px;
+    width: 95%;
+}

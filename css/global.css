@@ -1,0 +1,27 @@
+.navbar {
+    /* background: #0797ED; */
+    background: #33A0D9;
+    color: black;
+}
+
+.list ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: black !important;
+}
+
+footer {
+    /* background: #0797ED; */
+    background: #2180B2;
+    height: auto;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+.icons {
+    font-size: 30px;
+    color: white;
+}

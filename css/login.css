@@ -1,15 +1,3 @@
-.navbar {
-    /* background: #0797ED; */
-    background: #33A0D9;
-    color: black;
-}
-
-.list ul li a {
-    font-size: 18px;
-    font-weight: bold;
-    color: black !important;
-}
-
 .login {
     width: 90px;
     color: black;
@@ -26,6 +14,8 @@
 .loginSignupForm {
     /* padding: 9rem 3rem 0 3rem; */
     padding-top: 4rem;
+    margin: auto;
+    display: block;
 }
 
 .loginSignupForm h2 {
@@ -43,7 +33,7 @@
     letter-spacing: 0.105em;
 }
 
-.or{
+.or {
     color: #B9B9B9;
 }
 
@@ -94,7 +84,13 @@ input[type="password"] {
     margin-bottom: 50px;
 }
 
-.signin{
+.signin {
+    cursor: pointer;
+    color: #000;
+    text-decoration: underline;
+}
+
+.signup {
     cursor: pointer;
 }
 
@@ -121,27 +117,10 @@ input[type="password"] {
 }
 
 
-.facebook img{
+.facebook img {
     height: 60px;
 }
 
-.google img{
+.google img {
     height: 60px;
-}
-
-
-footer {
-    /* background: #0797ED; */
-    background: #2180B2;
-    height: auto;
-    color: white;
-}
-
-footer a {
-    color: white;
-}
-
-.icons {
-    font-size: 30px;
-    color: white;
 }

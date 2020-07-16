@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>Login</title>
+
+    <!--build:css css/login.min.css-->
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/login.css">
-    <!-- bootstrap -->
+    <!--endbuild-->
+
+    <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- font-awesome  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
-
-
     <!-- Navbar -->
-
     <nav class="navbar navbar-expand-md navbar-light top-fixed">
         <!-- Navbar Brand -->
         <a href="#" class="navbar-brand ml-5">
-            <!-- <img src="logo.png" alt="logo"> -->
-            <img src="img/Asset 1_1 1.png" alt="">
+            <img src="img/login/Asset 1_1 1.png" alt="">
         </a>
 
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#responsive">
@@ -45,137 +45,138 @@
 
     <!-- Navbar end -->
 
-
     <!-- Content Section -->
-
     <section class="content p-4">
 
         <div class="row m-0 p-0 mb-4">
             <div class="col-lg-6 col-md-6 m-0">
-
                 <!-- Rectangle -->
-                <div class="mt-5 pt-lg-0 pt-md-5">
-                    <img class="img-fluid mx-auto d-block" src="img/Rectangle 1.png" alt="">
-
+                <div class="mt-5">
+                    <img class="img-fluid mx-auto d-block" src="img/login/Rectangle 1.png" alt="">
                 </div>
-
             </div>
+
             <div class="col-lg-6 col-md-6 m-0">
                 <!-- loginForm -->
-                <div id="login" class="loginSignupForm" style="display: block;">
+                <div class="loginSignupForm">
 
-                    <form>
-                        <div class="row">
-                            <!-- <div class="col-lg-8 col-md-10 offset-lg-2">
-                                <h2 class="signin">Sign in <span class="or">or</span> <span class="signup"
-                                        onclick="signup()">Sign up</span></h2>
-                            </div> -->
-                            <div class="col-lg-8 offset-lg-2">
-                                <h2 class="signin">Sign in <span class="or">or</span> <span class="signup"
-                                        onclick="signup()">Sign
-                                        up</span></h2>
-                            </div>
-
+                    <!-- <form action="/login" method="post"> -->
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2 px-lg-0">
+                            <h2><span id="loginText" class="signin" onclick="login()">Sign in</span> <span
+                                    class="or">or</span> <span id="signupText" class="signup" onclick="signup()">Sign
+                                    up</span></h2>
+                        </div>
+                        <form id="login" action="/login" method="post" style="display: block;">
                             <!-- Email address -->
-                            <div class="col-lg-8 col-md-10 offset-lg-2">
+                            <div class="col-lg-12 col-md-12 offset-lg-2">
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1" class="email">Email address</label>
-                                    <input type="email" class="form-control pt-0" id="InputEmail"
+                                    <label for="loginEmail" class="email">Email address</label>
+                                    <input type="email" class="form-control" name="email" id="loginEmail"
                                         placeholder="username@email.com">
                                 </div>
                             </div>
-                            <!-- Password -->
 
-                            <div class="col-lg-8 col-md-10 offset-lg-2">
+                            <!-- Password -->
+                            <div class="col-lg-12 col-md-12 offset-lg-2">
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1" class="float-left password">Password</label>
+                                    <label for="loginPassword" class="float-left password">Password</label>
                                     <small class="float-right forgotpassword"> <a href="#"><u>Forgot
                                                 Password?</u></a></small>
-                                    <input type="password" class="form-control" id="InputPassword">
+                                    <input type="password" class="form-control" id="loginPassword" name="password">
                                 </div>
                             </div>
+
                             <!-- Sign In Button-->
+                            <div class="col-lg-12 col-md-12 offset-lg-2">
+                                <button type="submit" class="btn text-uppercase signinBtn"> Sign in </button>
+                            </div>
+                        </form>
 
-                            <div class="col-lg-8 col-md-10 offset-lg-2">
-                                <a href="#" type="submit" class="btn text-uppercase signinBtn"> Sign in </a>
-
-                                <div class="row text-center mt-5">
-                                    <div class="col-3" style="padding-right: 0;">
-                                        <hr>
-                                    </div>
-                                    <div class="col-6" style="padding: 0;letter-spacing: 2px;font-size: 14px;">
-                                        <b>or continue with</b>
-                                    </div>
-                                    <div class="col-3" style="padding-left: 0;">
-                                        <hr>
-                                    </div>
+                        <!-- signup form -->
+                        <form id="signup" action="/register" method="post" style="display: none;">
+                            <!-- Name -->
+                            <div class="col-lg-12 col-md-12 offset-lg-2">
+                                <div class="form-group">
+                                    <label for="signUpUsername" class="name">Username</label>
+                                    <input type="text" class="form-control" id="signUpUsername" name="username">
                                 </div>
-                                <!-- <small class="d-block text-center mt-5 signUpForFree">Not a racer yet? <a href="#">Sign
+                            </div>
+
+                            <!-- Email address -->
+                            <div class="col-lg-12 col-md-12 offset-lg-2">
+                                <div class="form-group">
+                                    <label for="signUpEmail" class="email">Email address</label>
+                                    <input type="email" class="form-control" id="signUpEmail"
+                                        placeholder="username@email.com" name="email">
+                                </div>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="col-lg-12 col-md-12 offset-lg-2">
+                                <div class="form-group">
+                                    <label for="signUpPassword" class="float-left password">Password</label>
+                                    <small class="float-right forgotpassword"> <a href="#"><u>Forgot
+                                                Password?</u></a></small>
+                                    <input type="password" class="form-control" id="signUpPassword" name="password">
+                                </div>
+                            </div>
+                            <!-- Sign Up Button-->
+
+                            <div class="col-lg-12 col-md-12 offset-lg-2">
+                                <button type="submit" class="btn text-uppercase signinBtn"> Sign Up </button>
+                            </div>
+                        </form>
+                        <div class="col-lg-8 col-md-10 offset-lg-2">
+
+                            <div class="row text-center mt-5">
+                                <div class="col-3" style="padding-right: 0;">
+                                    <hr>
+                                </div>
+                                <div class="col-6" style="padding: 0;letter-spacing: 2px;font-size: 14px;">
+                                    <b>or continue with</b>
+                                </div>
+                                <div class="col-3" style="padding-left: 0;">
+                                    <hr>
+                                </div>
+                            </div>
+                            <!-- <small class="d-block text-center mt-5 signUpForFree">Not a racer yet? <a href="#">Sign
                                         up for free</a></small> -->
-                            </div>
-
-                            <div class="col-lg-8 col-md-10 offset-lg-2">
-                                <div class="row mt-3">
-                                    <div class="col-6 facebook text-right pr-3">
-                                        <img src="img/facebook-logo 1.png" alt="">
-                                    </div>
-                                    <div class="col-6 google text-left pl-3">
-                                        <img src="img/google-g-2015-logo-png-transparent 2.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
 
-                    </form>
+                        <div class="col-lg-8 col-md-10 offset-lg-2">
+                            <div class="row mt-3">
+                                <div class="col-6 facebook text-right pr-3">
+                                    <a href="/facebook">
+                                        <img src="img/login/facebook-logo 1.png">
+                                    </a>
+                                </div>
+                                <div class="col-6 google text-left pl-3">
+                                    <a href="/google">
+                                        <img src="img/login/google-g-2015-logo-png-transparent 2.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- </form> -->
 
                 </div>
 
                 <!-- Signup Form -->
-                <div id="signup" class="loginSignupForm" style="display: none;">
-
-                    <form>
+                <!-- <div id="signup" class="loginSignupForm" style="display: none;">
+                    <form action="/register" method="post">
                         <div class="row">
-                            <!-- <div class="col-lg-8 col-md-10 offset-lg-2">
-                                <h2 class="signin" onclick="signin()">Sign in <span class="or">or</span> <span
-                                        class="signup">Sign up</span></h2>
-                            </div> -->
-
                             <div class="col-lg-8 offset-lg-2">
                                 <h2 class="signin" style="color: #B9B9B9;"><span onclick="login()">Sign in </span><span
                                         class="or">or</span> <span class="signup" style="color: #171925">Sign up</span>
                                 </h2>
                             </div>
-                            <!-- Name -->
-                            <div class="col-lg-8 col-md-10 offset-lg-2">
-                                <div class="form-group">
-                                    <label for="exampleInputName1" class="name">Name</label>
-                                    <input type="text" class="form-control pt-0" id="InputName">
-                                </div>
-                            </div>
 
-                            <!-- Email address -->
-                            <div class="col-lg-8 col-md-10 offset-lg-2">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="email">Email address</label>
-                                    <input type="email" class="form-control pt-0" id="InputEmail"
-                                        placeholder="username@email.com">
-                                </div>
-                            </div>
-                            <!-- Password -->
 
                             <div class="col-lg-8 col-md-10 offset-lg-2">
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1" class="float-left password">Password</label>
-                                    <small class="float-right forgotpassword"> <a href="#"><u>Forgot
-                                                Password?</u></a></small>
-                                    <input type="password" class="form-control" id="InputPassword">
-                                </div>
-                            </div>
-                            <!-- Sign In Button-->
-
-                            <div class="col-lg-8 col-md-10 offset-lg-2">
-                                <a href="#" type="submit" class="btn text-uppercase signinBtn"> Sign in </a>
 
                                 <div class="row text-center mt-5">
                                     <div class="col-3" style="padding-right: 0;">
@@ -188,19 +189,17 @@
                                         <hr>
                                     </div>
                                 </div>
-                                <!-- <small class="d-block text-center mt-5 signUpForFree">Not a racer yet? <a href="#">Sign
-                                        up for free</a></small> -->
                             </div>
 
                             <div class="col-lg-8 col-md-10 offset-lg-2">
                                 <div class="row mt-3">
                                     <div class="col-6 facebook text-right pr-3">
-                                        <img src="img/facebook-logo 1.png" alt="">
+                                        <img src="img/login/facebook-logo 1.png" alt="">
 
 
                                     </div>
                                     <div class="col-6 google text-left pl-3">
-                                        <img src="img/google-g-2015-logo-png-transparent 2.png" alt="">
+                                        <img src="img/login/google-g-2015-logo-png-transparent 2.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -208,8 +207,11 @@
                         </div>
 
                     </form>
+                </div> -->
 
-                </div>
+                <!-- this message appears when wrong password or some other errors occur
+                 isko sahi jagah par rkh dena -->
+                <span><%= (flash) ? flash : '' %></span>
             </div>
 
         </div>
@@ -226,7 +228,7 @@
 
             <!-- Grid row -->
             <div class="row">
-                <div class="col-md-3 my-3 text-left">
+                <div class="col-md-3 my-3">
                     <a href="#">Turbo Type 2020</a>
                 </div>
                 <hr class="clearfix w-100 d-md-none">
@@ -254,7 +256,7 @@
 
 
     <!-- javascripts -->
-    <script src="js/login.js"></script>
+    <script src="js/components/login/login.js"></script>
 </body>
 
 
